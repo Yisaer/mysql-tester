@@ -58,7 +58,7 @@ func init() {
 	flag.BoolVar(&record, "record", false, "Whether to record the test output to the result file.")
 	flag.StringVar(&params, "params", "", "Additional params pass as DSN(e.g. session variable)")
 	flag.BoolVar(&all, "all", false, "run all tests")
-	flag.BoolVar(&reserveSchema, "reserve-schema", false, "Reserve schema after each test")
+	flag.BoolVar(&reserveSchema, "reserve", false, "Reserve schema after each test")
 	flag.StringVar(&xmlPath, "xunitfile", "", "The xml file path to record testing results.")
 
 	c := &charset.Charset{
